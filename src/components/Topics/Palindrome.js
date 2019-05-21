@@ -19,9 +19,7 @@ class Palindrome extends Component {
   handlePalindrome(userInput){
     let forwards = userInput;
     let backwards = userInput;
-    backwards = backwards.split('');
-    backwards = backwards.reverse();
-    backwards = backwards.join('');
+    backwards = backwards.split('').reverse().join('');
     
       if( forwards === backwards ){
         this.setState({ palindrome: 'true' })
